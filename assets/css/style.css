@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+      
+    }
+   body {
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   background-color: cadetblue;
+   margin:0px;
+   padding:0px;
+   line-height: 1.5;
+   background-image: url("https://img.wallpapersafari.com/desktop/1280/1024/98/83/tqzDo5.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   }
+   
+   h1,h3,h2 {
+   margin-left: 10px;
+   color: white;
+   font-size: 30px;
+   }
+       
+   
+   .header {
+       padding: 20px;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       flex-wrap: wrap;
+       align-items: center;
+       background-image: url("https://img.wallpapersafari.com/desktop/1280/1024/98/83/tqzDo5.jpg");
+       color: #ffffff;
+   }
+   
+   .header h1 {
+     margin:0px;
+   font-size: 2em;
+   line-height: 1;
+   }
+   
+   nav {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   }
+   nav a {
+   color: white;
+   font-size: 1.2rem;
+   margin-right: 15px;
+   }
+   
+   a:hover {
+       color: rgba(245, 255, 255, 0.5);
+   }
+   
+   main {
+       margin-top: 20px;
+       margin-bottom: 45px;
+   }
+   .hero-banner {
+   background-image: url("https://backgroundcheckall.com/wp-content/uploads/2017/12/best-background-designs-for-websites-8.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   min-height: 25vh;
+   display:flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+   text-align: right;
+   }
+   
+   .hero-banner h2 {
+   margin:0px;
+   padding:15px;
+   font-size: 2rem;
+   line-height: 1;
+   display: inline;
+   }
+   
+   p {
+       font-size: 20px;  
+       flex: 1 1 100%;
+     
+   }
+   
+   .aboutme-items {
+       display:flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       align-items:stretch;
+       justify-content: space-between;
+      margin:20px;
+       padding: 5px;
+   }
+   
+   .aboutme {
+       border: 5px solid black;
+       background-color: rgba(0, 0, 255, 0.301);
+       color: white;
+       display: flex;
+       align-items: flex-end;
+       flex-basis:calc(75% - 1em);
+   }
+   .work-items {
+       display:flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       align-items: stretch;
+       justify-content: space-between;
+      margin:20px;
+       padding: 5px;
+   }
+   
+       .work {
+           border: 5px solid black;
+           background-color: rgb(0, 183, 255);
+           color: white;
+           min-height: 300px;
+           max-height: 300px;
+           display: flex;
+           align-items: flex-end;
+           flex-direction: row;
+           align-items: stretch;
+           justify-content: space-between;
+           flex-basis:calc(50% - 1em);
+       }
+
+       .work:first-child {
+       min-height: 400px;
+       flex-basis: 100%;
+       }
+        
+   
+   .work-items p {
+       margin-left: 10px;
+   }
+   
+   .content {
+      margin-left:auto;
+      margin-right:auto;
+      max-width: 88%;
+     
+   }
+   
+   
+   .surf-report {
+       background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/55/Large_breaking_wave.jpg")
+   }
+   .led-wall {
+       background-image: url("https://images.pexels.com/photos/268966/pexels-photo-268966.jpeg?cs=srgb&dl=pexels-pixabay-268966.jpg&fm=jpg")
+   }
+   .calculator {
+       background-image: url("https://images.pexels.com/photos/583846/pexels-photo-583846.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+   }
+   
+   .pastel-puzzles {
+       background-image: url("https://www.rd.com/wp-content/uploads/2020/01/GettyImages-87487497-e1579034836695-scaled.jpg?fit=700,655");
+   
+   }
+   
+   .run-buddy {
+       background-image: url("https://i.pinimg.com/236x/f6/93/f3/f693f3dff36006f9cbd8b9fb31544082--vector-character-marathon.jpg");
+   }
+   
+   
+   .contact {
+       border: 5px solid black;
+       background-color: rgba(0, 0, 255, 0.301);
+       color: white;
+       display: flex;
+       align-items: flex-end;
+     
+       flex-basis:calc(75% - 1em);
+   }
+       .contact-items {
+           display:flex;
+       
+           flex-wrap: wrap;
+           align-items: stretch;
+           justify-content: space-between;
+       }
+   
+   
+   .contact-info {
+   font-size:16pt;
+   display: flex;
+   
+   flex-wrap: wrap;
+   }
+   
+   
+   .list-adjust {
+       display: flex;
+       flex-wrap: wrap;
+      text-align: justify;
+   }
+      
+   .aboutme-items img {
+     max-height: 250px;
+     margin: 10px;
+     
+   
+   }
+   
+   .contact-items img {
+       max-height: 200px;
+       flex: 1 0 10%;
+   }
+   
+   
+   
+   
+   
+   .footer {
+       padding: 30px;
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       text-align:center;
+   }
+   
+   .footer h2 {
+       font-size: 15px;
+       color:white
+   }
+   .footer p {
+       color:white
+   }
+
+@media screen and (max-width: 992px){
+    .work {
+        flex: 0 0 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .work {
+        flex-basis: 100%;
+    }
+    .work:first-child {
+        flex-basis: 100%;
+    }
+}
