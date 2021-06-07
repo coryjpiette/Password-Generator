@@ -48,7 +48,7 @@
 if (upperCase)
 {
     finalArray = finalArray.concat(upperCaseArray)
-
+}
     if (numChar){
 finalArray = finalArray.concat(numCharArray)
 }
@@ -56,11 +56,19 @@ if(specialChar) {
     finalArray = finalArray.concat(specialCharArray)
 }
 
-  }
-  
+var passwordString = "";
 
-    }
+for (var i = 0; i < passwordLength; i++) {
+
+passwordString = finalArray[Math.floor(Math.random() * (finalArray.length))];
+
+}
+
+  }
+
+
     
+
 //Write password to the #password imput
     function writePassword () {
         var password = generatePassword();
