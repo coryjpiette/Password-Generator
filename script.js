@@ -28,11 +28,11 @@
 
 
 
-    var lowerCase = charChoice ("Do you want to include lower case letters?");
-    var upperCase = charChoice ("Do you want to include upper case letters?");
+    var lowerCase = charChoice ("lower case");
+    var upperCase = charChoice ("UPPER CASE");
 
-    var numChar = charChoice ("Do you want to include numbers?");
-    var specialChar = charChoice ("Do you want to include special characters?");
+    var numChar = charChoice ("number");
+    var specialChar = charChoice ("special");
 
     if (lowerCase || upperCase || numChar || specialChar) {
         charSelected = true; }
@@ -45,7 +45,7 @@
     {
         finalArray = finalArray.concat(lowerCaseArray)
     }
-if (upperCase)
+    if (upperCase)
 {
     finalArray = finalArray.concat(upperCaseArray)
 }
@@ -64,10 +64,26 @@ passwordString = finalArray[Math.floor(Math.random() * (finalArray.length))];
 
 }
 
+return passwordString;
   }
 
 
-    
+    function choosePasswodLength() {
+
+        var userselect = 0;
+
+        while ((userselect <8) || (userselect < 128)) {
+            userselect =parseInt (window.prompt("Plase select your passord length (8 -28 characters)."));
+        
+            if(isNaN(userselect)) {
+                userselect=0
+            }
+   
+   
+    }
+   
+    return userselect;
+}
 
 //Write password to the #password imput
     function writePassword () {
