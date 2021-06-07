@@ -70,12 +70,12 @@ return passwordString;
 
     function choosePasswodLength() {
 
-        var userselect = 0;
+        var userSelect = 0;
 
-        while ((userselect <8) || (userselect < 128)) {
+        while ((userSelect <8) || (userSelect < 128)) {
             userselect =parseInt (window.prompt("Plase select your passord length (8 -28 characters)."));
         
-            if(isNaN(userselect)) {
+            if(isNaN(userSelect)) {
                 userselect=0
             }
    
@@ -84,6 +84,30 @@ return passwordString;
    
     return userselect;
 }
+
+function charChoice(choiceNow){
+    var userSelect = "a";
+    windowQuestion = "";
+    var windowQuestion = windowQuestion.concat(" characters? Please type 'yes' or no.'");
+while (userSelect = "a"){
+
+    userSelect = (window.prompt(windowQuestion));
+
+    userSelect = userSelect.toLowerCase();
+
+    if(userSelect === "yes") {
+        return true;
+    }
+else (userSelect === "no") {
+    return false;
+}
+
+}
+
+}
+
+
+
 
 //Write password to the #password imput
     function writePassword () {
