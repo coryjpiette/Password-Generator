@@ -1,40 +1,25 @@
-//Assignment Code
-
-    var generateBtn = document.querySelector("#generate");
-
-   
+  
+    function generatePassword() {
 
     var lowerCaseArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o",  "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
     var upperCaseArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
     var numCharArray = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
     var specialCharArray = ["#","@", "$", "%", "!", "^", "&", "*", ",", "-", "_", "=", "+", "/", ">", "<", ":", ";"]; // remember to go back and add more characters //
   
-    
-   
-
-
-    function generatePassword() {
-    
-
-
     var finalArray = []
 
-
-    var passwordLength = choosePasswodLength("How many characters (from 8 to 128) would you like the password to be?");
+    var passwordLength = choosePasswordLength();
     var charSelected = false;
    
    
-    while (charSelected = false) {
-
-
+    while (charSelected == false) {
 
     var lowerCase = charChoice ("lower case");
     var upperCase = charChoice ("UPPER CASE");
-
     var numChar = charChoice ("number");
     var specialChar = charChoice ("special");
 
-    if (lowerCase || upperCase || numChar || specialChar) {
+    if ((lowerCase) || (upperCase) || (numChar) || (specialChar)) {
         charSelected = true; }
         else { window.alert("Please choose at least one character type to continue.")
     }
@@ -52,15 +37,15 @@
     if (numChar){
 finalArray = finalArray.concat(numCharArray)
 }
-if(specialChar) {
+if (specialChar) {
     finalArray = finalArray.concat(specialCharArray)
 }
 
-var passwordString = "";
+var passwordString = "string";
 
 for (var i = 0; i < passwordLength; i++) {
 
-passwordString = finalArray[Math.floor(Math.random() * (finalArray.length))];
+passwordString += finalArray[Math.floor(Math.random() * (finalArray.length))];
 
 }
 
@@ -68,28 +53,29 @@ return passwordString;
   }
 
 
-    function choosePasswodLength() {
+    function choosePasswordLength() {
 
         var userSelect = 0;
 
-        while ((userSelect <8) || (userSelect < 128)) {
-            userselect =parseInt (window.prompt("Plase select your passord length (8 -28 characters)."));
+        while ((userSelect <= 8) || (userSelect >= 128)) {
+            userSelect = parseInt(window.prompt("Please select your password length (8-128 characters)."));
         
             if(isNaN(userSelect)) {
-                userselect=0
+                userSelect=0;
             }
    
    
     }
    
-    return userselect;
+    return userSelect;
 }
 
-function charChoice(choiceNow){
-    var userSelect = "a";
-    windowQuestion = "";
+function charChoice(choiceNow) {
+    var userSelect = "string";
+    windowQuestion = "string";
+    var windowQuestion = ("Would you like ".concat(choiceNow))
     var windowQuestion = windowQuestion.concat(" characters? Please type 'yes' or no.'");
-while (userSelect = "a"){
+while (userSelect = "string"){
 
     userSelect = (window.prompt(windowQuestion));
 
@@ -98,15 +84,15 @@ while (userSelect = "a"){
     if(userSelect === "yes") {
         return true;
     }
-else (userSelect === "no") {
+else if (userSelect === "no") {
     return false;
 }
 
 }
-
 }
 
 
+var generateBtn = document.querySelector("#generate");
 
 
 //Write password to the #password imput
