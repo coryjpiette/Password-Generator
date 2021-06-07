@@ -10,17 +10,8 @@
     var specialCharArray = ["#","@", "$", "%", "!", "^", "&", "*", ",", "-", "_", "=", "+", "/", ">", "<", ":", ";"]; // remember to go back and add more characters //
   
     
- 
-//Write password to the #password imput
-    function writePassword () {
-    var password = generatePassword();
-    var passwordText = document.querySelector("#password");
+   
 
-    passwordText.value = password; }
-
-    // Add event listener to generate button
-
-    generateBtn.addEventListener("click", writePassword);
 
     function generatePassword() {
     
@@ -28,11 +19,14 @@
 
     var finalArray = []
 
-    var charSelected = false;
-
-    while (charSelected = false) {
 
     var passwordLength = choosePasswodLength("How many characters (from 8 to 128) would you like the password to be?");
+    var charSelected = false;
+   
+   
+    while (charSelected = false) {
+
+
 
     var lowerCase = charChoice ("Do you want to include lower case letters?");
     var upperCase = charChoice ("Do you want to include upper case letters?");
@@ -42,7 +36,7 @@
 
     if (lowerCase || upperCase || numChar || specialChar) {
         charSelected = true; }
-        else { window.alert("Please choose at least 1 to continue.")
+        else { window.alert("Please choose at least one character type to continue.")
     }
   
     }
@@ -66,4 +60,21 @@ if(specialChar) {
   
 
     }
+    
+//Write password to the #password imput
+    function writePassword () {
+        var password = generatePassword();
+        var passwordText = document.querySelector("#password");
+        passwordText.value = password; }
 
+
+ // Add event listener to generate button
+
+ generateBtn.addEventListener("click", writePassword);
+  
+
+
+
+
+
+  
