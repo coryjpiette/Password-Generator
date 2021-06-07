@@ -12,7 +12,7 @@
     
  
 //Write password to the #password imput
-function writePassword () {
+    function writePassword () {
     var password = generatePassword();
     var passwordText = document.querySelector("#password");
 
@@ -22,6 +22,8 @@ function writePassword () {
 
     generateBtn.addEventListener("click", writePassword);
 
+    function generatePassword() {
+    
     var allChar = []
 
     var finalArray = []
@@ -45,6 +47,20 @@ function writePassword () {
   
     }
 
+    if (lowerCase)
+    {
+        finalArray = finalArray.concat(lowerCaseArray)
+    }
+if (upperCase)
+{
+    finalArray = finalArray.concat(upperCaseArray)
+
+    if (numChar){
+finalArray = finalArray.concat(numCharArray)
+}
+if(specialChar) {
+    finalArray = finalArray,concat(specialCharArray)
+}
 
   }
   
