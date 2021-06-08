@@ -32,3 +32,5 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 
 The password generator can be reached at: https://coryjpiette.github.io/Password-Generator/
+
+![image](https://user-images.githubusercontent.com/60293516/121233083-4251ba00-c860-11eb-9463-c04604421836.png)
