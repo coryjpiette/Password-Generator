@@ -56,7 +56,7 @@ function choosePasswordLength() {
 
     var userSelect = 0;
 
-    while ((userSelect <= 8) || (userSelect >= 128)) {
+    while ((userSelect < 8) || (userSelect > 128)) {
         userSelect = parseInt(window.prompt("Please select your password length (8-128 characters)."));
 
         if (isNaN(userSelect)) {
