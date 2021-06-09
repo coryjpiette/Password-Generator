@@ -22,7 +22,7 @@ function generatePassword() {
             charSelected = true;
         }
         else {
-            window.alert("Please choose at least one character type to continue.")
+            alert("Please choose at least one character type to continue.")
         }
 
     }
