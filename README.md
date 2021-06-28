@@ -1,5 +1,4 @@
 # Password-Generator
-Homework #3 Password Generator
 
 Welcome to the Password Generator!
 
